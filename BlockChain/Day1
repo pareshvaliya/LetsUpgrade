@@ -1,0 +1,28 @@
+Q:1-> What is Your understanding of BlockChain ?
+Ans: BlockChain is the mix Technology of Distributed database and Cryptography.
+
+Q:2->What is the core problem BlockChain trying to solve ?
+Ans: 1.Authenticity
+     2.Security
+     3.Need of powerful third party for trust
+
+Q:3->What are the few features which blockchain will give you ?
+Ans:
+    1.Verifiable 
+    2.Unchangeable
+    3.Tamper Proof
+    4.Immutable
+
+Q:4->What are all the things the BlockChain contains ?
+Ans:      
+      1.Block Number
+      2.Important data
+      3.Previous blocks signature
+      4.Mining key
+
+
+Q:5->How is the verifiability of BlockChain achieved ?
+Ans:
+As the same database is distributed across peers and all these data are encrypted.
+Also the all block contains the previous blocks signature.
+Due to this, if by mistake any peer has a different signature than this can be verified from another peer. 
