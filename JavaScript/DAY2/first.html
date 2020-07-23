@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Assignment - 1</title>
+    </head>
+    <body>
+        Today is : <p id="day" style="display: inline;"></p>
+        <br>
+        Current time is : <p id="time" style="display: inline;"></p>
+        <script>
+            var d = new Date();
+            var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            document.getElementById("day").innerHTML = days[d.getDay()];
+            hours = d.getHours();
+            var ex = 'AM';
+            if(hours==0){ 
+                hours=12;
+                }
+            else if(hours == 12)
+            {
+                ex='PM';
+            }
+            else if(hours>12)
+                {
+                hours=hours%12;
+                ex='PM';
+                }
+            function str(a)
+            {
+                if(a<=9){
+                    a = "0"+a;
+                }
+                return a
+            }
+            var format;
+            format = str(hours)+" "+ex+" : "+str(d.getMinutes())+" : "+str(d.getSeconds())
+            document.getElementById("time").innerHTML = format;
+
+            
+        </script>
+
+    </body>
+</html>

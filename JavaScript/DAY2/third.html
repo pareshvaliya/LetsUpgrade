@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Assignment - 1</title>
+    </head>
+    <body>
+        Today is : <p id="date" style="display: inline;"></p>
+        <script>
+            var d = new Date();
+            var year = d.getFullYear();
+            var day = d.getDate();
+            var month = d.getMonth();
+            month = month+1;
+            function str(a)
+            {
+                if(a<=9){
+                    a = "0"+a;
+                }
+                return a
+            }
+            date  = str(day)+"-"+str(month)+"-"+year
+
+            document.getElementById("date").innerHTML = date;
+        </script>
+    </body>
+</html>
