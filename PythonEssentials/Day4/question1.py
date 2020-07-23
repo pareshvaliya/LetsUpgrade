@@ -1,15 +1,16 @@
 string = "what we think we become; we are Python programmer"
-substing = 'z'
+substing = 'w'
 i = 0
 result = ''
 while(True):
-    i = string.find(substing,i+1)
+    i = string.find(substing,i)
     if(i==-1):
         break
-    result += str(i)+" "
+    result += str(i)+","
+    i = i+1
 
 if(len(result)):
-    print(f"The occurence of substring '{substing}' are at {result.strip().replace(' ',',')}") 
+    print(f"The substring '{substing}' occures at {result.strip(',')}.") 
 
 else:
     print(f"The substring '{substing}' is not present")
