@@ -1,5 +1,5 @@
 string = "what we think we become; we are Python programmer"
-substing = 'w'
+substing = 'we'
 i = 0
 result = ''
 while(True):
